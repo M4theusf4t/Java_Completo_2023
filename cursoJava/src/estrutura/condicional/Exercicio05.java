@@ -15,7 +15,7 @@ public class Exercicio05 {
 		 * 
 		 */
 		
-		double preco; 
+		double preco = 0; 
 		int produto, quantidade;
 		
 		System.out.println("1  | Cachorro Quente | R$ 4.00");
@@ -25,21 +25,43 @@ public class Exercicio05 {
 		System.out.println("5  | Refrigerante    | R$ 1.50");
 		System.out.println("");
 		
-		System.out.println("Digite o Código do produto: ");
+		System.out.print("Digite o Código do produto: ");
 		produto = sc.nextInt();
 		
-		System.out.println("Escolha agora a quantidade: ");
-		produto = sc.nextInt();
+		System.out.print("Escolha agora a quantidade: ");
+		quantidade = sc.nextInt();
 
 		switch (produto) {
 		case 1:
 			preco = 4.00;
+			preco *= quantidade;
+			break;
+		case 2:
+			preco = 4.50;
+			preco *= quantidade;
+			break;
+		case 3:
+			preco = 5.00;
+			preco *= quantidade;
+			break;
+		case 4:
+			preco = 2.00;
+			preco *= quantidade;
+			break;
+		case 5:
+			preco = 1.50;
+			preco *= quantidade;
 			break;
 		default:
-			throw new IllegalArgumentException("Unexpected value: " + key);
+			System.out.println("Produto Invalido!");
 		}
 		
+		if (preco != 0) {
+			System.out.printf("Total do Pedio: R$ %.2f",preco);
+		}
+
 		
+		sc.close();
 	}
 
 }
