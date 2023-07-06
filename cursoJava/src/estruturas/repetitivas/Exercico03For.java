@@ -1,5 +1,8 @@
 package estruturas.repetitivas;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Exercico03For {
 
 	public static void main(String[] args) {
@@ -13,7 +16,30 @@ public class Exercico03For {
 		 * 
 		 */
 		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
 		
+		System.out.print("Digite o número de testes: ");
+		int n = sc.nextInt();
+		
+		for (int i = 0; i < n; i++) {
+			System.out.print("Primeiro valor: ");
+			Double primeiro = sc.nextDouble();
+			
+			System.out.print("Segundo valor: ");
+			Double segundo = sc.nextDouble();
+			
+			System.out.print("Terceiro valor: ");
+			Double terceiro = sc.nextDouble();
+			
+			double media = (primeiro * 2.0 + segundo * 3.0 + terceiro * 5.0) / 10.0;
+			
+			System.out.printf("Media: %.1f%n", media);
+		}
+		
+		
+		
+		sc.close();
 		
 	}
 

@@ -27,6 +27,7 @@ public class Exercicio01For {
 		}
 		
 		
+		sc.close();
 	}
 
 }
