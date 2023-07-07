@@ -1,5 +1,7 @@
 package estruturas.repetitivas;
 
+import java.util.Scanner;
+
 public class Exercicio07For {
 
 	public static void main(String[] args) {
@@ -12,6 +14,23 @@ public class Exercicio07For {
 		 * 
 		 */
 		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite o número de linhas: ");
+		int linhas = sc.nextInt();
+		
+		for (int i = 1; i <= linhas; i++) {
+			System.out.print(i);
+			int quadrado = i * i;
+			System.out.print(" "+quadrado);
+			int cubo = i * i * i;
+			System.out.print(" "+cubo);
+			
+			System.out.println("");
+		}
+		
+		
+		sc.close();
 	}
 
 }

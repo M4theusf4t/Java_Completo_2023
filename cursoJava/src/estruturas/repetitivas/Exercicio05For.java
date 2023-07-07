@@ -1,5 +1,7 @@
 package estruturas.repetitivas;
 
+import java.util.Scanner;
+
 public class Exercicio05For {
 
 	public static void main(String[] args) {
@@ -11,7 +13,21 @@ public class Exercicio05For {
 		 * 
 		 */
 		
+		Scanner sc = new Scanner(System.in);
 		
+		int fatorial = 1;
+		
+		System.out.print("Digite um valor: ");
+		int n = sc.nextInt();
+		
+		for (int i = 1; i <= n; i++) {
+			fatorial *= i;
+		}
+
+		System.out.println("Fatorial de "+ n +" e: "+ fatorial);
+		
+		
+		sc.close();
 	}
 
 }
