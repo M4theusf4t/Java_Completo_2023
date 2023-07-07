@@ -24,13 +24,13 @@ public class Exercico03For {
 		
 		for (int i = 0; i < n; i++) {
 			System.out.print("Primeiro valor: ");
-			Double primeiro = sc.nextDouble();
+			double primeiro = sc.nextDouble();
 			
 			System.out.print("Segundo valor: ");
-			Double segundo = sc.nextDouble();
+			double segundo = sc.nextDouble();
 			
 			System.out.print("Terceiro valor: ");
-			Double terceiro = sc.nextDouble();
+			double terceiro = sc.nextDouble();
 			
 			double media = (primeiro * 2.0 + segundo * 3.0 + terceiro * 5.0) / 10.0;
 			
